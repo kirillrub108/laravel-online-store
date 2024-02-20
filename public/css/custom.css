@@ -1,53 +1,47 @@
-/* Пример пользовательских стилей */
 .card-img-top {
     width: 100%;
-    height: auto; /* Или фиксированная высота, если нужно */
+    height: auto; /* Адаптивная высота */
 }
 
 /* Основные элементы */
-body {
-    background-color: #f0f8ff; /* Светло-голубой фон */
-    color: #03396c; /* Темно-голубой текст */
+body, html {
+    background-color: #f5f7fa; /* Светлый серый фон */
+    color: #4a4a4a; /* Умеренно темный серый текст */
+    min-height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Современный шрифт */
 }
 
 /* Навигационная панель */
 .navbar {
-    background-color: #b3cde0 !important; /* Голубой фон для навигационной панели */
+    background-color: #ffffff !important; /* Белый фон для навигационной панели */
+    box-shadow: 0 2px 4px rgba(0,0,0,.1); /* Небольшая тень для глубины */
 }
 
 .nav-link {
-    color: #03396c !important; /* Темно-голубой цвет текста ссылок */
+    color: #7a7a7a !important; /* Темно-серый цвет текста ссылок */
+}
+
+.navbar .nav-item.active .nav-link {
+    color: #000000 !important;
 }
 
 .nav-link:hover {
-    color: #011f4b !important; /* Чуть более темный оттенок голубого при наведении */
+    color: #000000 !important; /* Черный при наведении */
 }
 
 /* Кнопки */
 .btn-primary {
-    background-color: #03396c; /* Темно-голубой фон для кнопок */
-    border-color: #03396c; /* Темно-голубая граница для кнопок */
+    background-color: #007bff; /* Ярко-синий фон для кнопок */
+    border-color: #007bff; /* Граница синего цвета для кнопок */
 }
 
 .btn-primary:hover {
-    background-color: #011f4b; /* Чуть более темный оттенок голубого для фона кнопок при наведении */
-    border-color: #011f4b; /* Чуть более темный оттенок голубого для границы кнопок при наведении */
+    background-color: #0056b3; /* Темно-синий фон для кнопок при наведении */
+    border-color: #0056b3; /* Темно-синяя граница для кнопок при наведении */
 }
 
 /* Карточки продуктов */
-.card {
-    border-color: #b3cde0; /* Голубая граница для карточек */
-}
-
-.card-header {
-    background-color: #b3cde0; /* Голубой фон для заголовка карточки */
-    color: #03396c; /* Темно-голубой текст для заголовка карточки */
-}
-
-.card-body {
-    background-color: #e6f2ff; /* Очень светло-голубой фон для тела карточки */
-}
-
 .card-fixed-size {
     height: 100%; /* Фиксированная высота карточки */
     width: 100%; /* Фиксированная ширина карточки */
@@ -64,4 +58,19 @@ body {
 .card-fixed-size .card-body {
     flex-grow: 1; /* Позволяет содержимому карточки заполнять оставшееся пространство */
     overflow: auto; /* Добавляет прокрутку, если содержимое превышает выделенное пространство */
+}
+
+.content {
+    min-height: 100%;
+}
+
+.site-footer {
+    height: 43px;
+    width: 100%;
+    background-color: #007bff; /* Ярко-синий фон футера */
+    color: #ffffff; /* Белый текст */
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
 }

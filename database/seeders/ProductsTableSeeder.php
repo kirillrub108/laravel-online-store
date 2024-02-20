@@ -42,7 +42,7 @@ class ProductsTableSeeder extends Seeder
                 'name' => 'Samsung Galaxy S23+',
                 'description' => 'Мощный телефон с большими возможностями в использовании.',
                 'price' => 78990,
-                'category' => 'Телефоны',
+                'category' => 'Смартфоны',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
